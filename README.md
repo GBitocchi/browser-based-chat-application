@@ -15,16 +15,16 @@ A simple browser-based chat application using Node.js
 
 ## Installation
   * You must have installed node in your system.
-  * Pull the repository in one folder of your choice0
+  * Pull the repository in one folder of your choice.
   * You will need to install RabbitMQ:3-management (To manage the queues between the bot and the chat app) and MongoDB (To handle the users and passwords). The first one I did it with docker toolbox with the following command: docker run -d --hostname jobsity-rabbit -p 5672:5672 -p 8081:15672 --name jobsity_rabbit rabbitmq:3-management. On the other hand, for the MongoDB, I installed and setted up a local version on my machine.
-  * Edit both environment files in jobsity-chat folder and jobsity-decoupled-bot folder to meet your environment requirements. Every .env file explains itself their internal variables.
+  * Edit both environment files in the jobsity-chat folder and the jobsity-decoupled-bot folder to meet your environmental requirements. Every .env file explains itself its internal variables.
     ![image](https://user-images.githubusercontent.com/26705692/115178286-57536d80-a0a7-11eb-9ad9-0c971b34c933.png)
-  * Execute the command: npm install inside jobsity-chat folder and jobsity-decoupled-bot folder to install node_modules.
+  * Execute the command: npm install inside the jobsity-chat folder and the jobsity-decoupled-bot folder to install node_modules.
   * Once you do the previous points, you can execute jobsity-chat app and jobsity-decoupled-bot apps both with the command: npm run dev in each folder (open different terminals).
-  * If you want to run the test, execute the command: npm run test in jobsity-chat folder.
-  * Now you have both app running on your machine. You could enter to the Jobsity-chat application in the port 8000 by default.
+  * If you want to run the test, execute the command: npm run test in the jobsity-chat folder.
+  * Now you have both apps running on your machine. You could enter the Jobsity-chat application in port 8000 by default.
     ![image](https://user-images.githubusercontent.com/26705692/115178354-7c47e080-a0a7-11eb-837f-9a3b8f58fc40.png)
-  * The last thing you will need are users. You have to create a collection called user in your jobsity database on MongoDB and add it as many documents as users you want. The structure of the document is the following: 
+  * The last thing you will need is users. You have to create a collection called user in your jobsity database on MongoDB and add as many documents as users you want. The structure of the document is the following: 
     ![image](https://user-images.githubusercontent.com/26705692/115178027-c5e3fb80-a0a6-11eb-9712-05b4ef3a4cbc.png)
-  * When you enter to the application, it will ask you for a room, enter any name you want.
+  * When you enter the application, it will ask you for a room, enter any name you want.
     ![image](https://user-images.githubusercontent.com/26705692/115178415-a13c5380-a0a7-11eb-8dee-9abaf00bc958.png)
