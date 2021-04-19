@@ -15,7 +15,7 @@ export async function App(
   const rabbitConnection = await amqp.connect(`amqp://${rabbitHost}`);
   const stockChannel = await rabbitConnection.createChannel();
 
-  logger.logInfo(`Connected to RabbitMQ!`);
+  logger.logInfo(`Connected to RabbitMQ! Host: ${rabbitHost}`);
 
   const stockRoomRequestQueue = 'stockRoomRequest';
   const stockRoomResponseQueue = 'stockRoomResponse';
@@ -37,7 +37,7 @@ export async function App(
         .on('data', (stockData: any) => stockResults.push(stockData))
         .on('end', () => {
           const closePrice = stockResults[0].Close;
-          let stockMessageBot = `There is no close info for Stock Code: ${stockCode.toUpperCase()}`;
+          let stockMessageBot = `There is no close price info for the stock code: ${stockCode.toUpperCase()}`;
 
           if (closePrice !== 'N/D') {
             stockMessageBot = `${stockCode.toUpperCase()} quote is $${closePrice} per share`

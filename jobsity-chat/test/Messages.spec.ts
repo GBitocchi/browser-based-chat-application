@@ -3,7 +3,6 @@ import { TYPES } from '../src/Containers/types';
 import UserService from '../src/Services/user_service';
 import { RoomMessage } from '../src/Types/cache';
 import Environment from '../src/Types/environment_schema';
-import { UserData } from '../src/Types/message';
 import { DbClient, getDatabaseClient } from '../src/utils/db_client';
 import { container } from '../src/utils/ioc_container';
 import Logger from '../src/utils/Logger';

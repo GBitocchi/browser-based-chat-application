@@ -5,7 +5,6 @@ const $msgFormButton = $msgForm.querySelector('button')
 const $messages = document.querySelector("#messages")
 const msgtemplate = document.querySelector("#msg-template").innerHTML
 const sidebartemplate = document.querySelector('#user-rooms').innerHTML
-
 const { username, password, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
 
 const autoscroll = () => {

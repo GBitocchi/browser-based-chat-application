@@ -12,9 +12,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ncr-ps-retail/smartview-iot-interface"
+		"url": "https://github.com/GBitocchi/jobsity-challenge"
 	},
-	"author": "NCR",
+	"author": "GBitocchi",
 	"license": "MIT",
 	"dependencies": {
 		"amqplib": "^0.7.1",

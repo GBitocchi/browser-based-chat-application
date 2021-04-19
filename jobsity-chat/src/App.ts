@@ -53,7 +53,7 @@ export async function App(
     const rabbitConnection = await amqp.connect(`amqp://${rabbitHost}`);
     const stockChannel = await rabbitConnection.createChannel();
 
-    logger.logInfo(`Connected to RabbitMQ!`);
+    logger.logInfo(`Connected to RabbitMQ! Host: ${rabbitHost}`);
 
     const socketHandler = container.resolve<SocketConnectionHandler>(SocketConnectionHandler);
 
