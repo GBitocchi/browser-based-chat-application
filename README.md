@@ -25,6 +25,6 @@ A simple browser-based chat application using Node.js
   * Now you have both apps running on your machine. You could enter the Jobsity-chat application in port 8000 by default.
     ![image](https://user-images.githubusercontent.com/26705692/115178354-7c47e080-a0a7-11eb-837f-9a3b8f58fc40.png)
   * The last thing you will need is users. You have to create a collection called user in your jobsity database on MongoDB and add as many documents as users you want. The structure of the document is the following: 
-    ![image](https://user-images.githubusercontent.com/26705692/115178027-c5e3fb80-a0a6-11eb-9712-05b4ef3a4cbc.png)
+    ![image](https://user-images.githubusercontent.com/26705692/115178926-9e8e2e00-a0a8-11eb-93b9-99830904f24b.png)
   * When you enter the application, it will ask you for a room, enter any name you want.
     ![image](https://user-images.githubusercontent.com/26705692/115178415-a13c5380-a0a7-11eb-8dee-9abaf00bc958.png)
