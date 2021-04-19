@@ -1,0 +1,9 @@
+node_modules
+logs
+dist
+*linux
+*macos
+*.exe
+.idea
+bundles
+.vscode
