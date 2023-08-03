@@ -1,4 +1,4 @@
-# jobsity-challenge
+# Browser-based chat application
 A simple browser-based chat application using Node.js
 
 ## Requirements
